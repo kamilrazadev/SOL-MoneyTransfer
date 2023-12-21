@@ -22,21 +22,19 @@ const App = () => {
   }, []);
 
   return (
-    <>
-      <BrowserRouter>
-        <nav className="navbar">
-          <Navbar />
-        </nav>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/help" element={<Help />} />
-          <Route path="/mission-and-values" element={<MissionValues />} />
-          <Route path="/countries-we-cover" element={<CountriesWeCover />} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-    </>
+    <BrowserRouter>
+      <nav className="navbar">
+        <Navbar />
+      </nav>
+      <Routes>
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/help" element={<Help />} />
+        <Route path="/mission-and-values" element={<MissionValues />} />
+        <Route path="/countries-we-cover" element={<CountriesWeCover />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 };
 
