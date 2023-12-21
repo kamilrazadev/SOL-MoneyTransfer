@@ -1,0 +1,121 @@
+
+.hero_banner_main {
+    /* layout */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    min-height: 90vh;
+    padding: 0 45px;
+    position: relative;
+
+    /* UI */
+    background-color: #2B4C96;
+}
+
+
+.hero_banner_headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 65%;
+}
+
+.hero_banner_headings > h1 {
+    text-transform: uppercase;
+    color: #F9DF08;
+    font-size: 5vw;
+    font-weight: 800;
+    line-height: 4vw;
+}
+
+.hero_banner_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+    /* overflow-y: auto; */
+}
+
+.hero_banner_logo > div {
+    width: 100%;
+    /* height: 200%; */
+}
+
+.hero_banner_logo img {
+    width: 100%;
+    /* height: 394px; */
+}
+
+@media (max-width: 768px) {
+
+    /* Hero Banner */
+    .hero_banner_main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    .hero_banner_headings {
+        width: 100%;
+        height: auto;
+    }
+    .hero_banner_headings > h1 {
+        font-size: 8vw !important;
+        line-height: 6.4vw;
+        text-align: center;
+    }
+    .hero_banner_logo {
+        width: 70%;
+        height: auto;
+    }
+}
+
+/* Country Flags */
+
+.countries_flags_main {
+    width: 100%;
+    padding: 90px 0;
+}
+
+.countries_flags_container {
+    width: 100%;
+}
+
+.scrolling_flags {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.flags_container {
+    display: flex;
+    align-items: center;
+}
+
+.flags_container img {
+    margin-left: 30px;
+    width: 100px;
+}
+
+.flags_container:first-of-type {
+    margin-left: 70px;
+}
+
+.flags_container:last-of-type {
+    margin-right: 70px;
+}
+
+.flags_container h6 {
+    margin-left: 15px;
+
+    text-transform: uppercase;
+    color: #707070;
+    font-weight: 600;
+    font-size: 14px;
+}

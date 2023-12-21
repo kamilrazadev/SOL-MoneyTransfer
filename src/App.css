@@ -1,0 +1,45 @@
+.navbar {
+    position: sticky !important;
+    top: 0px;
+    z-index: 10;
+}
+
+/* Yellow common button */
+
+.yellow_btn_common {
+    background-color: #F9DF08;
+    color: #010139;
+    transition: 200ms linear;
+    border: 1px solid #F9DF08;
+    border-radius: 16px;
+    font-weight: 500;
+}
+
+.yellow_btn_common:hover {
+    background-color: #ddc703;
+    scale: 0.95;
+}
+
+.yellow_btn_common:active {
+    scale: 1;
+}
+
+/* Blue Blue common Button */
+
+.blue_blue_common_btn {
+    background-color: #010139;
+    color: #24AED5;
+    transition: 200ms linear;
+    border: 1px solid #010139;
+    border-radius: 16px;
+    font-weight: 500;
+}
+
+.blue_blue_common_btn:hover {
+    background-color: #0a0a50;
+    scale: 0.95;
+}
+
+.blue_blue_common_btn:active {
+    scale: 1;
+}

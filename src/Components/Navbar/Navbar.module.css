@@ -1,0 +1,281 @@
+.menu_bars {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 62px;
+    height: 38px;
+    position: absolute;
+    top: 165px;
+    right: 35px;
+
+    /* UI */
+    cursor: pointer;
+}
+
+.menu_bars > div {
+    /* layout */
+    width: 70%;
+    height: 6px;
+
+    /* UI */
+    background-color: #B9A609;
+    /* box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.385); */
+    border-radius: 5px;
+}
+
+.menu_bars > div:nth-child(2) {
+    width: 50% !important;
+}
+
+.menu_bars_nav {
+    /* layout */
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 62px;
+    height: 38px;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+
+    /* UI */
+    cursor: pointer;
+}
+
+
+.menu_bars_nav > div {
+    /* layout */
+    min-width: 40px !important;
+    height: 6px;
+    position: absolute;
+
+
+    /* UI */
+    background-color: #B9A609;
+    /* box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.385); */
+    border-radius: 5px;
+}
+
+.menu_bars_nav > div:first-child{
+    transform: rotate(135deg) !important;
+}
+
+.menu_bars_nav > div:nth-child(2) {
+    transform: rotate(45deg) !important;
+}
+
+
+/* Navbar */
+
+
+.header {
+    width: 100%;
+    position: sticky !important;
+    top: 0;
+    z-index: 99999 !important;
+}
+
+.white_rectangle {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* padding-left: 1px;    */
+    padding-top: 0px;
+}
+
+.header_icons {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 0 10px;
+}
+
+.help_link {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 1);
+    width: 80px;
+}
+
+.help_link img {
+    margin-right: 20px;
+    margin-top: 10px;
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.help_text {
+    font-size: 18px;
+    margin-left: -81px;
+    font-weight: 800;
+    margin-bottom: 23px;
+}
+
+#SOL_Logo {
+    position: absolute;
+    width: 126px;
+    height: 147px;
+    left: 150px; /* Adjust this value as needed */
+    top: -30px;
+    overflow: visible;
+    z-index: 1;
+}
+
+.SOL_Logo img {
+    transition: transform 0.3s; /* Add a smooth transition effect */
+    /* margin-top: 0px; */
+
+}
+
+.help_link:hover img,
+.SOL_Logo:hover img {
+    transform: translateY(5px);
+    transform: scale(1.1);
+}
+.join_now_button,
+.sign_in_button {
+    color: white;
+    border: none;
+    padding: 10px 0;
+    width: 176px;
+    
+
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.join_now_button {
+    background-color: #2B4C96;
+    color: #F9DF08;
+    margin-right: 10px; /* Adjust the margin for Join Now button */
+}
+
+.sign_in_button {
+    background-color: #F9DF08;
+    color: #2B4C96;
+    margin-right: 20px; /* Adjust the margin for Sign In button */
+}
+
+
+.yellow_rectangle {
+    height: 54px;
+    width: 100%;
+
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);
+    background-color: rgba(249, 223, 8, 1);
+}
+
+/* Nav Responsive */
+
+.nav_responsive {
+    /* Layout */
+    width: 100%;
+    height: 85vh;
+    overflow: auto;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; */
+
+    position: fixed;
+    right: 100%;
+    top: 115px;
+    z-index: 10000 !important;
+    padding: 50px;
+
+    /* UI */
+    background: #010139 0% 0% no-repeat padding-box;
+    opacity: 0.9;
+    transition: 300ms linear;
+}
+
+.nav_responsive_links {
+    width: 100%;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: flex-start;
+    justify-content: space-between; */
+    margin-top: 50px;
+}
+
+.nav_responsive h3 {
+    padding: 12px 0 8px 0;
+
+    color: #F9DF08;
+    font-weight: 400;
+}
+
+.nav_responsive ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-left: 10px !important;
+}
+
+.nav_responsive a {
+    /* Layout */
+    margin-left: 15px;
+    margin-bottom: 7px;
+
+    /* UI */
+    color: #fff;
+    font-weight: 200;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition: 200ms;
+}
+
+.nav_responsive a:hover {
+    scale: 1.1;
+}
+
+.nav_responsive_bottom {
+    margin-top: 50px;    
+    display: flex;
+    justify-content: center;
+}
+
+.nav_responsive_bottom button {
+    /* Layout */
+    padding: 10px 20px;
+
+    /* UI */
+    background-color: #F9DF08;
+    border: 1px solid #24AED5;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    #sign_in {
+        display: none !important;
+    }    
+    .menu_bars {
+        scale: 0.7;
+        top: 150px;
+        right: 35px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav_responsive_links ul {
+        padding: 0;
+    }    
+}

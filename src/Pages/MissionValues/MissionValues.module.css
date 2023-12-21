@@ -1,0 +1,280 @@
+.mission_hero_main {
+    /* Layout */
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 100px 15px !important;
+    position: relative;
+
+    /* UI */
+    background-color: #2B4C96;
+}
+
+.globeImage {
+  position: absolute;
+  top: -70px;
+  right: -330px;
+  height: 105vh;
+  z-index: 1;
+}
+
+.mission_hero_container {
+    width: 700px;
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+}
+
+
+.mission_hero_container h6 {
+    text-align: center;
+    font-size: 18px;
+    color: #24AED5;
+}
+
+.mission_hero_container h1 {
+    margin: 20px 0;
+
+    letter-spacing: -1px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 55px;
+    color: #B5F7FF;
+}
+
+.mission_hero_container p {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.mission_hero_btns {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.mission_hero_btns button {
+    padding: 8px 35px;
+
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.mission_hero_btns button:first-child {
+    border: 2px solid #F9DF08;
+}
+
+.mission_hero_btns button:nth-child(2) {
+    padding: 8px 70px !important;
+
+    border: 2px solid #24AED5;
+}
+
+/* Mission Values Cards */
+
+.mission_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px; 
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch; 
+
+  }
+  
+  .misson_values_card {
+    max-width: 330px;
+    flex: 0 0 calc(33.3333% - 16px); 
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 5px #00000029;
+    border: 1px solid #DEDBDB;
+    border-radius: 28px;
+  }
+
+  .misson_values_card_img {
+    width: 100%;
+    height: 210px;
+    box-shadow: 0px 8px 5px #00000029;
+    border-radius: 28px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+  }
+
+  .misson_values_card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .misson_values_card h6 {
+    font-weight: 800;
+    color: #000000;
+  }
+
+  
+  .misson_values_card p {
+    font-size: 13px;
+    text-align: justify;
+    color: #000000;
+  }
+
+  .card_section_button {
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card_section_button button {
+    /* Layout */
+    padding: 10px 40px;
+
+    /* UI */
+    border: none;
+    outline: none;
+    background-color: #2B4C96;
+    border-radius: 45px;
+  }
+
+  /* StayInformed */
+
+  .stay_informed_main {
+    background-color: #EFEFF4;
+  }
+
+  .stay_informed_container {
+    padding: 50px 30px;
+  }
+
+  .stay_informed_sec_title {
+      max-width: 100%;
+  }
+
+  .stay_informed_sec_title h1 {
+    font-weight: 800;
+    font-size: 35px;
+    color: #2B4C96;
+  }
+
+  .stay_informed_content {
+    /* Layout */
+    margin-top: 20px;
+    display: flex;  
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .content_txt {
+    max-width: 340px;
+    color: #2B4C96;
+  }
+
+  .content_txt h6 {
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .content_txt p {
+    margin: 5px;
+
+    line-height: 22px;
+    font-size: 13px;
+  }
+
+  .content_table {
+    /* Layout */
+    width: 500px;
+
+    /* UI */
+    background-color: #fff;
+    box-shadow: 0px 10px 6px #00000029;
+    border: 1px solid #DEDBDB;
+    border-radius: 0 0 25px 25px;
+    overflow: hidden;
+  }
+
+  .table_heading {
+    background-color: #EFEFF4 !important;
+    text-align: center;
+  }
+
+  .table_heading td {
+    padding: 5px 0 !important;
+    font-weight: 800;
+  }
+
+.table_body tr {
+  /* width: 100%; */
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  border-top: 2px solid #00000041;
+  color: #000000;
+}
+
+.content_table td {
+    
+  color: #010139 !important;
+  text-align: center;
+}
+
+.table_txt td {
+  padding: 16px 0 !important;
+}
+
+  /* Media Queries */
+
+@media (max-width: 571px) {
+    .misson_values_card {
+      flex: 0 0 calc(100% - 16px) !important; /* One card per row from 571px */
+    }
+  }
+
+  
+@media (max-width: 871px) {
+    .misson_values_card {
+      flex: 0 0 calc(50% - 16px); /* Three cards per row from 801px */
+      max-width: 320px;
+    }
+  }
+  
+
+@media (max-width: 650px) {
+    .mission_hero_container h1 {
+        font-size: 45px;
+    }    
+    .mission_hero_btns {
+        flex-direction: column;
+        width: 450px;
+    }
+}
+
+@media (max-width: 530px) {
+    .mission_hero_container h1 {
+        font-size: 30px;
+        line-height: 25px;
+    }    
+    .mission_hero_container h6 {
+        font-size: 14px;
+    }
+    .mission_hero_container p {
+        font-size: 13px;
+    }
+    .mission_hero_btns {
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+    }
+}

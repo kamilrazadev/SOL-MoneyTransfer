@@ -1,0 +1,135 @@
+.help_main {
+    padding: 100px 20px;
+}
+
+.help_container {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* UI */
+    color: #010139;
+}
+
+.search_container {
+    /* Layout */
+    width: 700px;
+    max-width: 90%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+
+    /* UI */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 20px;
+}
+
+.search_container > div {
+    height: 30px;
+    flex: 0 0 12%; /* This div will take 12% of the available width */
+    display: flex;
+    justify-content: center;
+
+}
+
+.search_container input {
+    /* Layout */
+    height: 100%;
+    flex: 1; /* This input will take the remaining space */
+    
+
+    /* UI */
+    font-weight: 600;
+    color: #414040;
+    border-radius: 0 20px 20px 0;
+    border: none;
+    outline: none;
+}
+
+.login_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 30px 0;
+
+}
+
+.login_btn {
+    padding: 7px 30px;
+    width: 100%;
+}
+
+.trouble_login_link {
+    color: #010139;
+    text-decoration-color: #010139;
+}
+
+
+.help_cards_main {
+    max-width: 800px;
+    padding: 50px 0;
+}
+
+.help_cards_main > h5 {
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.help_cards_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Adjust as needed */
+    gap: 20px; 
+}
+
+.help_card {
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+
+    
+    /* UI */
+    background: #EFEFF4;
+    border: 1px solid #F9DF08;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.help_card img {
+    /* Layout */
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+
+    /* UI */
+    background-color: #292933;
+    border-radius: 50%;
+}
+
+.help_card p {
+    font-size: 12px;
+}
+
+.help_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.help_bottom h6 {
+    font-weight: 800;
+}
+
+.help_bottom button {
+    padding: 5px 30px;
+}

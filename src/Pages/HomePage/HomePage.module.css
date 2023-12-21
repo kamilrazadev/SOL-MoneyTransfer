@@ -1,0 +1,1007 @@
+/* Common Classes */
+
+.wrapper {
+    /* padding: 20px 88px; */
+    padding: 3vw 5vw;
+    width: 100%;
+    height: 100%;
+}
+
+.heading_common {
+    font-size: 3.8vw;
+    line-height: 3.7vw;
+    font-weight: 800;
+}
+
+.sub_heading {
+    font-weight: 500;    
+}
+
+@media (max-width: 768px) {
+    .heading_common {
+        font-size: 33px;
+        line-height: 30px;
+    }    
+}
+
+/* Scrolling buttons */
+
+
+#Ellipse_up {
+	opacity: 0.394;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_up {
+	position: absolute;
+	overflow: visible;
+	width: 10px;
+	height: 10px;
+	left: 0px;
+	top: 0px;
+}
+
+#Ellipse_down {
+	opacity: 0.394;
+	fill: rgba(255,255,255,1);
+	stroke: rgba(112,112,112,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Ellipse_down {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	overflow: visible;
+    top: 75px;
+    left: 0;
+	/* transform: translate(-27px, -851px) matrix(1,0,0,1,57,928) rotate(180deg);
+	transform-origin: center; */
+}
+#Polygon_up_yellow {
+	opacity: 0.899;
+	fill: rgba(249,223,8,1);
+}
+#Polygon_up_blue {
+	opacity: 0.899;
+	fill: rgba(43,76,150,1);
+}
+.Polygon_up {
+	overflow: visible;
+	position: absolute;
+	width: 20px;
+	height: 18px;
+	left: 20px;
+	top: 21px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Polygon_down_yellow {
+	opacity: 0.899;
+	fill: rgba(249,223,8,1);
+}
+#Polygon_down_blue {
+	opacity: 0.899;
+	fill: rgba(43,76,150,1);
+}
+.Polygon_down {
+	overflow: visible;
+	position: absolute;
+	width: 20px;
+	height: 18px;
+	transform: translate(-57px, -851px) matrix(1,0,0,1,77,949) rotate(180deg);
+	transform-origin: center;
+	left: 0px;
+	top: 0px;
+}
+
+@media (max-width: 628px) {
+ .Polygon_down {
+    width: 16px;
+    height: 12px;
+ }       
+ .Polygon_up {
+    width: 16px;
+    height: 12px;
+ }   
+ .Ellipse_down {
+    /* width: 30px;
+    height: 30px;
+     */
+ }
+}
+
+/* HeroBanner Styles */
+
+.hero_banner_main {
+    /* layout */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+    min-height: 100vh;
+    /* padding: 0 64px 0 151px; */
+    position: relative;
+
+    /* UI */
+    background-image: url(/public/assets/images/header_background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero_banner_headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 65%;
+}
+
+.hero_banner_headings > h1:first-child {
+    color: #F9DF08;
+    font-size: 6.4vw;
+    letter-spacing: 5.9px;
+    font-weight: 800;
+}
+
+.hero_banner_headings > h1:nth-child(2) {
+    color: #fff;
+    font-size: 6.6vw;
+    text-align: justify;
+    letter-spacing: 5.04px;
+    font-weight: 800;
+}
+
+.hero_banner_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 35%;
+    /* overflow-y: auto; */
+}
+
+.hero_banner_logo > div {
+    width: 100%;
+    /* height: 200%; */
+}
+
+.hero_banner_logo img {
+    width: 100%;
+    /* height: 394px; */
+}
+
+#hero_scroll_btn {
+	position: absolute;
+	width: 60px;
+	height: fit-content;
+	left: 21px;
+	bottom: 190px;
+	overflow: visible;
+    cursor: pointer;
+}
+
+/* MoneyTransferForm Styles */
+
+.money_transfer_main {
+    width: 100%;
+    /* height: 540px; */
+    background-color: #F9DF08;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.money_transfer_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.money_transfer_container > div {
+    width: 50%;
+}
+
+.money_transfer_form {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 40px 54px;
+
+    /* UI */
+    background-color: #2B4C96;
+    border: 1px solid #DEDBDB;
+    border-radius: 37px;
+    box-shadow: 0px 12px 5px #00000063;
+}
+
+.form_field > div {
+    /* layout */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+
+    /* UI */
+    background-color: #fff;
+    border: 1px solid #707070;
+    border-radius: 20px;
+}
+
+.form_field > div > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.form_field img {
+    height: 40px;
+}
+
+.form_field  input {
+    /* layout */
+    height: 100%;
+    width: 70%;
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+
+    /* UI */
+    text-indent: 20px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    border-radius: 25px 0 0 25px;
+}
+
+.form_field > p {
+    font-size: 18px;
+    color: #2CD1F5;
+    margin: 0 0 10px 20px;
+}
+
+.arrow_icon {
+    margin-top: 5px;
+    width: 20px !important;
+    height: 22px !important;
+}
+
+.form_btn {
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;    
+}
+
+.form_btn button {
+    width: 246px;
+    height: 55px;    
+    border: 1px solid #707070;
+    border-radius: 24px;
+    font-size: 18px;
+    transition: 150ms linear;
+}
+
+.form_btn button:first-child:hover {
+    scale: 0.95;
+}
+
+
+.form_btn button:first-child:active {
+    scale: 1;
+}
+
+.form_btn button:nth-child(2):hover {
+    background: transparent;
+    color: #F9DF08;
+    border: 1px solid #F9DF08 ;
+    /* scale: 0.95; */
+}
+
+.form_btn button:first-child {
+    background-color: #fff;
+    color: #2B4C96;
+    font-weight: 600;
+}
+
+.form_btn button:nth-child(2) {
+    font-weight: 900;
+    background-color: #F9DF08;
+    color: #2B4C96;
+}
+
+.money_transfer_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.money_transfer_txt > h4 {
+    font-size: 52px;
+    font-weight: normal;
+}
+
+.money_transfer_txt > h2 {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/* MoneyTransferLLC.jsx */
+
+.n_00BN_TEXT {
+	width: 100%;
+	/* height: 352px; */
+    background-color: #2B4C96;
+}
+
+.Sol_Money_Transfer_LLC {
+	text-align: left;
+	font-family: Avenir, Arial (sans-serif) Verdana (sans-serif) Tahoma (sans-serif);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 52px;
+	color: rgba(255,255,255,1);
+    margin-bottom: 30px;
+}
+
+.Based_in_the_bustling_hub_of_N {
+	text-align: left;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+    line-height: 28px;
+	color: rgba(44,209,245,1);
+}
+
+/* InternationalMoneyTrans.jsx */
+
+.international_money_transfer_main {
+    position: relative;
+    width: 100%;
+    /* height: 540px; */
+    background-color: #F9DF08;
+    box-shadow: inset 0px 3px 6px #00000029, 0px 3px 6px #00000029;}
+
+.international_money_transfer_globe {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 30%;
+    /* z-index: 10; */
+}
+
+.international_money_transfer_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.international_money_transfer_container > div:first-child {
+    width: 40%;
+}
+
+.international_money_transfer_container > div:nth-child(2) {
+    width: 60%;
+}
+
+.international_money_transfer_form {
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 40px 54px;
+    position: relative;
+    z-index: 1;
+
+    /* UI */
+    background-color: #2B4C96;
+    border: 1px solid #DEDBDB;
+    border-radius: 37px;
+    box-shadow: 0px 12px 5px #00000063;
+}
+
+.international_money_transfer_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.international_money_transfer_txt > h1 {
+    color: #518B3E;
+}
+
+.international_money_transfer_txt > h3 {
+    color: #C7B308;
+}
+
+.our_fee {
+
+}
+
+.our_fee > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.our_free_li {
+    display: flex;
+    justify-content: space-between;
+    color: #F9DF08;
+}
+
+/* PeopleGoingPlaces.jsx */
+
+.people_going_places_main {
+    position: relative;
+    width: 100%;
+    background-color: #F7F7F7;
+    padding: 3vw 0 3vw 5vw;
+    box-shadow: 0px 10px 6px #00000029;
+}
+
+.people_going_places_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 40px;
+}
+
+.people_going_places_txt {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    position: relative;
+    /* z-index: 50; */
+}
+
+.people_going_places_txt h1 {
+    color: #28283C;
+}
+
+.arrow_icons_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.people_going_places_arrow_icons {
+    /* layout */
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* UI */
+    border-radius: 50%;
+    color: #2CD1F5;
+    font-size: 30px;
+    background-color: #010139;
+    border: 1px solid #707070;
+}
+
+.people_going_places_content {
+    width: 65%;
+    display: flex;
+    gap: 50px;
+    overflow: auto;
+}
+
+/* GoingPlacesCard */
+
+.going_places_card_blue {
+    background: #1C3671 0% 0% no-repeat padding-box !important;
+}
+
+.going_places_card_blue:hover {
+    background: #162854 0% 0% no-repeat padding-box !important;
+}
+
+.going_places_card_blue p {
+    font-weight: 400 !important;
+    color: #2CD1F5 !important;
+}
+
+.going_places_card_blue button {
+    background-color: #F9DF08 !important;
+    border: 1px solid #707070 !important;
+    color: #101d3b !important;
+    font-weight: 900 !important;
+
+}
+
+.going_places_card_main {
+    /* Layout */
+    width: 387px;
+    min-width: 387px;
+    height: 511px;
+    min-height: 511px;
+    padding: 30px;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* UI */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 10px 6px #00000029;
+    border: 1px solid #DEDBDB;
+    border-radius: 61px;
+    transform: scale(1);
+
+    transition: 300ms;
+}
+
+.going_places_card_main > div {
+    /* Add a default scale to the inner div */
+    transform: scale(1);
+    transition: 300ms;
+}
+
+.going_places_card_main:hover {
+    background: #e8e6e6;
+}
+
+.going_places_card_main:hover > div{
+    transform: scale(1.1);
+}
+
+.going_places_card_main img {
+    width: 170px;
+}
+
+.going_places_card_main p {
+    margin-top: 30px;
+
+    font-size: 18px;
+    color: #000;
+    font-weight: 500;
+}
+
+.going_places_card_main button {
+    /* Layout */
+    padding: 18px 20px;
+
+    /* UI */
+    background-color: #010139;
+    border: 1px solid #707070;
+    border-radius: 22px;
+    color: #2CD1F5;
+}
+
+/* DisappointThieves.jsx */
+
+.dissapoint_thieves_main {
+    background-color: #2B4C96;
+}
+
+.dissapoint_thieves_container {
+    padding-top: 40px;
+    display: flex;
+    gap: 80px;  
+}
+
+.dissapoint_thieves_txt h1 {
+    color: #2CD1F5;
+}
+
+.dissapoint_thieves_txt p {
+    margin-top: 40px;
+
+    color: #2CD1F5;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dissapoint_thieves_txt button {
+    /* Layout */
+    margin: 25px 0 0 20px;
+    padding: 18px 30px;
+
+    /* UI */
+    background-color: #F9DF08;
+    border: 2px solid #2CD1F5;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.dissapoint_thieves_content  img{
+    width: 360px;
+}
+
+.dissapoint_thieves_bottom {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dissapoint_thieves_bottom > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    width: 20%;
+}
+
+.dissapoint_thieves_bottom p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.dissapoint_thieves_bottom_img {
+    /* Layout */
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* UI */
+    background-color: #2CD1F5;
+    border-radius: 50%;
+}
+
+.dissapoint_thieves_bottom_img img{
+    width: 40px;
+    height: 40px;
+}
+
+
+/* OurTeam.jsx */
+
+.our_team_main {
+    background-color: #F7F7F7;
+}
+
+.our_team_container {
+
+}
+
+.our_team_container h1 {
+    color: #28283C !important;
+}
+
+.our_team_info_card_container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.our_team_info_card {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.our_team_content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.our_team_container p {
+    font-size: 14px;
+    font-weight: 500;
+    text-align: justify;
+    padding: 0 70px;
+}
+
+
+.our_team_info_card > div {
+    /* Layout */
+    width: 230px;
+    height: 230px;
+
+    /* UI */
+    background-size: cover;
+    background-position: center;
+    border: 3px solid #2B4C96;
+    border-radius: 50%;
+}
+
+.our_team_info_card h4 {
+    color: #101d3b;
+}
+
+.our_team_info_card span {
+    font-weight: 500;
+}
+
+/* Media Queries */
+
+@media (max-width: 1650px) {
+    /* MoneyTransferFrom */
+    .money_transfer_container {
+        gap: 15px;
+    }
+    .money_transfer_form {
+        height: fit-content;
+        width: 60% !important;
+    }
+    .money_transfer_txt {
+        width: 40% !important;
+    }
+    /* .form_btn {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    } */
+}
+
+@media (max-width: 1140px) {
+    .money_transfer_txt > h4 {
+        font-size: 52px;
+    }
+    .money_transfer_txt > h2 {
+        font-size: 26px;
+    }
+    .money_transfer_form {
+        gap: 40px;
+    }
+    /* .form_field > div {
+        height: 65px;
+    } */
+
+}
+
+@media (max-width: 960px) {
+    /* MoneyTransferForm */
+    .money_transfer_container {
+        flex-direction: column-reverse;
+    }    
+    .money_transfer_container > div {
+        width: 100% !important;
+    }
+    .money_transfer_txt {
+        text-align: center;
+    }
+
+    /* InternationalMoneyTrans */
+    .international_money_transfer_container {
+        flex-direction: column;
+    }
+    .international_money_transfer_globe {
+        max-width: 100%;
+        max-height: 100%;
+        left: -70px;
+        top: -30px;
+    }
+    .international_money_transfer_container > div {
+        width: 100% !important;
+    }
+    .international_money_transfer_form {
+        gap: 35px;
+    }
+
+    /* DisappointThieves.jsx */
+    .dissapoint_thieves_container {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .dissapoint_thieves_content {
+        display: flex;
+        justify-content: center;
+    }
+    .dissapoint_thieves_content img {
+        width: 300px;
+    }
+    .dissapoint_thieves_bottom > div {
+        width: 30%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+
+    /* Hero Banner */
+    .hero_banner_main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    .hero_banner_headings {
+        width: 100%;
+        height: auto;
+    }
+    .hero_banner_logo {
+        width: 70%;
+        height: auto;
+    }
+    .hero_banner_headings > h1:first-child {
+        font-size: 8vw !important;
+    }
+    .hero_banner_headings > h1:nth-child(2) {
+        font-size: 8.1vw !important;
+    }
+
+    /* MoneyTransferFrom */
+    .money_transfer_form {
+        padding: 20px 27px;
+        gap: 30px;
+    }
+    .arrow_icon {
+        width: 17px !important;
+        height: 20px !important;
+    }
+    .form_field div {
+        height: 40px;
+    }
+    .form_field img {
+        height: 35px;
+    }
+    .form_field input {
+        font-size: 16px;
+    }
+    .form_field p {
+        font-size: 16px;
+    }
+    .form_btn {
+        padding: 0;
+    }
+    .form_btn button {
+        height: 40px;
+        width: 170px;
+
+        border-radius: 20px;
+        font-size: 14px;
+    }
+
+    /* InternationalMoneyTans */
+    
+    .international_money_transfer_form {
+        padding: 20px 20px;
+    }
+
+
+    /* PeopleGoingPlaces.jsx */
+
+    .people_going_places_main {
+        padding: 30px 0 30px 0;
+    }
+    .people_going_places_container {
+        flex-direction: column;
+    }
+    .people_going_places_container > div {
+        width: 100%;    
+    }
+    .people_going_places_container > div:first-child {
+        padding-left: 20px;
+    }
+    .people_going_places_content {
+        gap: 10px;
+    }
+    .going_places_card_main {
+        width: 330px;
+        min-width: 330px;
+        max-width: 100%;
+        height: 441px;
+        min-height: 441px;
+        margin-left: 20px;
+    }
+    .going_places_card_main  p {
+        font-size: 17px ;  
+    }
+    .going_places_card_main img {
+        width: 150px;
+    }
+    .going_places_card_main button {
+        font-size: 12px;
+        padding: 16px 20px;
+    }
+
+    /* DisappointThieves.jsx */
+    .dissapoint_thieves_txt button {
+        font-size: 14px;
+        margin-left: 0;
+    }
+    .dissapoint_thieves_content img {
+        width: 250px !important;
+        max-width: 100%;
+    }
+
+    /* OurTeam.jsx */
+
+    .our_team_container p {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        padding: 30px 20px;
+    }
+    .money_transfer_txt {
+        gap: 10px;
+    }
+    .money_transfer_txt > h4 {
+        font-size: 35px;
+    }
+    .money_transfer_txt > h2 {
+        font-size: 18px;
+    }
+    .form_btn button {
+        height: 40px;
+        width: 170px;
+
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+    /* Form LLC */
+    .Sol_Money_Transfer_LLC {
+        font-size: 40px;
+    }
+    .Based_in_the_bustling_hub_of_N {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* InternationalMoneyTrans.jsx */
+
+    .our_free_li {
+        font-size: 12px;
+    }
+
+    /* OurTeam.jsx */
+
+    .our_team_container p {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 425px) {
+    .dissapoint_thieves_bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .dissapoint_thieves_bottom > div {
+        width: 80%;
+    }
+
+    /* OurTeam.jsx */
+
+    .our_team_container p {
+        padding: 0;
+    }
+}
