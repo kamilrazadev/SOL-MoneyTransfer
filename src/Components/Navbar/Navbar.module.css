@@ -26,9 +26,9 @@
     border-radius: 5px;
 }
 
-.menu_bars > div:nth-child(2) {
+/* .menu_bars > div:nth-child(2) {
     width: 50% !important;
-}
+} */
 
 .menu_bars_nav {
     /* layout */
