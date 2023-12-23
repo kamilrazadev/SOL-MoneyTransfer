@@ -195,6 +195,7 @@
   .content_table {
     /* Layout */
     width: 500px;
+    max-width: 100%;
 
     /* UI */
     background-color: #fff;
@@ -225,6 +226,7 @@
 }
 
 .content_table td {
+  padding-right: 50px !important;
     
   color: #010139 !important;
   text-align: center;
@@ -239,14 +241,24 @@
   padding: 16px 0 !important;
 }
 
+/* MissionRoadMap */
+
+.mission_road_map_main {
+  width: 100%;
+  height: 120vh;
+}
+
+.mission_road_map_main > div:first-child {
+  height: 45%;
+  background-color: red;
+}
+
+.mission_road_map_main > div:nth-child(2) {
+  height: 55%;
+  background-color: orange;
+}
+
   /* Media Queries */
-
-@media (max-width: 571px) {
-    .misson_values_card {
-      flex: 0 0 calc(100% - 16px) !important; /* One card per row from 571px */
-    }
-  }
-
   
 @media (max-width: 871px) {
     .misson_values_card {
@@ -254,6 +266,19 @@
       max-width: 320px;
     }
   }
+
+@media (max-width: 760px) {
+  .stay_informed_content {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }  
+  .content_table {
+    
+    align-self: center;
+  }
+}
   
 
 @media (max-width: 650px) {
@@ -264,6 +289,12 @@
         flex-direction: column;
         width: 450px;
     }
+}
+
+@media (max-width: 571px) {
+  .misson_values_card {
+    flex: 0 0 calc(100% - 16px) !important; /* One card per row from 571px */
+  }
 }
 
 @media (max-width: 530px) {
@@ -281,5 +312,11 @@
         font-size: 12px;
         justify-content: center;
         align-items: center;
+    }
+
+    /* StayInformed */
+    .stay_informed_sec_title h1 {
+      font-size: 25px;
+      text-align: center;
     }
 }
